@@ -9,7 +9,7 @@ It is a small terminal utility that calculates your OSSD mark.
 
 1. Add the Nix flake to your ```flake.nix``` input:
 ```nix
-osc.url="github:udontur/ossdmk";
+osc.url="github:udontur/osc";
 ```
 2. Add the package to your ```configurations.nix```:
 ```nix
