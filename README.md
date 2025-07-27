@@ -1,7 +1,9 @@
 # OSC
-OSC is `udontur/ossdmk` written python to make the calculations more precise, the code more maintainable, and reduce the program's complexity.
+OSC is `udontur/ossdmk` written in python to provide more accurate calculations, maintainable code, and reduce the program's complexity.
 
-## Installation (Linux)
+It is a small terminal utility that calculates your OSSD mark. 
+
+## Installation (Linux or MacOS)
 1. Add the Nix flake to your ```flake.nix``` input:
 ```nix
 osc.url="github:udontur/ossdmk";
@@ -14,4 +16,5 @@ inputs.osc.packages."${system}".default
 
 ## Usage
 Enter ```osc``` in the terminal.
-
+> [NOTE]
+> It can handle a lot of decimal points, but it will be rounded to 3 decimal places at the end. 
