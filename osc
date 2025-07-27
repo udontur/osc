@@ -1,22 +1,23 @@
 #!/usr/bin/env python3
 
+GREEN = "\033[92m"
+RESET = "\033[39m"
+GRAY = "\033[90m"
+
+def getInput(name):
+    print(f"Enter the {name}: ")
+    arr = [
+        float(arr)
+        for arr in
+        input(f"{GRAY}==>{RESET} ").split()
+    ]
+    return arr
+
 numberOfItems = int(input("Number of items? "))
 
-marks = [
-    float(mark)
-    for mark in
-    input("Enter the marks: ").split()
-]
-denominators = [
-    float(denominators)
-    for denominators in
-    input("Enter the denominators: ").split()
-]
-weights = [
-    float(weight)
-    for weight in
-    input("Enter the weights: ").split()
-]
+marks = getInput("marks")
+denominators = getInput("denominators")
+weights = getInput("weights")
 
 totalWeight = float(sum(weights))
 
@@ -31,9 +32,6 @@ for i in range(numberOfItems):
 exactMark *= 100
 finalMark = round(exactMark)
 exactMark = "{:.3f}".format(exactMark)
-
-GREEN = "\033[92m"
-RESET = "\033[39m"
 
 print()
 print(f"{GREEN}Final Mark: {finalMark}{RESET}")
