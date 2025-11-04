@@ -5,20 +5,17 @@ RESET = "\033[39m"
 GRAY = "\033[90m"
 
 def getInput(name):
-    print(f"Enter the {name}: ")
-    arr = [
-        float(arr)
-        for arr in
-        input(f"{GRAY}==>{RESET} ").split()
-    ]
+    print(f"Enter the {name}: ", end="")
+    arr = list(map(
+        int, input().split()
+    ))
     return arr
-
-numberOfItems = int(input("Number of items? "))
 
 marks = getInput("marks")
 denominators = getInput("denominators")
 weights = getInput("weights")
 
+numberOfItems = len(marks)
 totalWeight = float(sum(weights))
 
 exactMark = 0
