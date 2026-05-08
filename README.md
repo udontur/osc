@@ -3,6 +3,8 @@ OSC is a collection of OSSD Mark Calculator written in different programming lan
 
 The OSSD Mark Calculator is my first coding project and has been my go-to project when I first learn a language
 
+![](./assets/demo.gif)
+
 ## Variants
 - Python: [osc-py](./osc-py)
 - C++: [osc-cpp](./osc-cpp)
