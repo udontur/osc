@@ -6,6 +6,7 @@ The OSSD Mark Calculator is my first coding project and has been my go-to projec
 ## Variants
 - Python: [osc-py](./osc-py)
 - C++: [osc-cpp](./osc-cpp)
+- Go: [osc-go](./osc-go)
 
 ## Demo
 ![](./assets/demo.gif)
